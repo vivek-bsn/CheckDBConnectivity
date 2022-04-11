@@ -1,17 +1,18 @@
 # CheckDBConnectivity
 1.	Create the following sample table in the database
-CREATE TABLE dbo.tblSample
-(
-Name VARCHAR(50) NOT NULL,
-LastUpdatedDate DATETIME DEFAULT GETUTCDATE()
-)
-
-We will be doing insert and select on the above table
-If you want to use your own table, then change the select and insert queries in #6 below. 
+      CREATE TABLE dbo.tblSample
+      (
+      Name VARCHAR(50) NOT NULL,
+      LastUpdatedDate DATETIME DEFAULT GETUTCDATE()
+      )
+   We will be doing insert and select on the above table
+   If you want to use your own table, then change the select and insert queries in #6 below. 
 2.	Now, go to the WebJobs section under the App Service
+
  <img width="574" alt="image" src="https://user-images.githubusercontent.com/79462763/162824342-5904369a-9e4a-4ce0-bf67-ad723cc5bdf8.png">
 
 3.	Click on ‘Add’ under WebJobs and Upload the contents of Release folder after rebuilding the project and zipping them
+
  <img width="636" alt="image" src="https://user-images.githubusercontent.com/79462763/162824528-1d9ef67e-d244-4bff-9b99-2afaa56ba4bf.png">
 
 
