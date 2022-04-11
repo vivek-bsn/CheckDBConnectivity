@@ -1,12 +1,13 @@
 # CheckDBConnectivity
 1.	Create the following sample table in the database
+
       CREATE TABLE dbo.tblSample
       (
       Name VARCHAR(50) NOT NULL,
       LastUpdatedDate DATETIME DEFAULT GETUTCDATE()
       )
-   We will be doing insert and select on the above table
-   If you want to use your own table, then change the select and insert queries in #6 below. 
+
+      We will be doing insert and select on the above table. If you want to use your own table, then change the select and insert queries in #7 below. 
 2.	Now, go to the WebJobs section under the App Service
 
  <img width="574" alt="image" src="https://user-images.githubusercontent.com/79462763/162824342-5904369a-9e4a-4ce0-bf67-ad723cc5bdf8.png">
